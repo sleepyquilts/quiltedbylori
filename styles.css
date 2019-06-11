@@ -1,8 +1,8 @@
 @charset "utf-8";
 /*
-        Project V3: Quilted by Lori
+        Project V4: Quilted by Lori
         Created by: Jennah Hubenak
-        Date: May 3, 2019
+        Date: June 9, 2019
         This file holds my styles for the website
 */
 
@@ -53,10 +53,26 @@ p#bertha {
 p#bertha > img {
     display: block;
     width: 50%
+    
+}
+/* 
+M8LO12 Demonstrate how to format media with CSS (CSS, group your media styles together and describe their overall impact on the media feature of your page)
+For my video I wanted the video to sit alongside the picture displayed on my index and also I wanted the video to be no larger than 400px to keep the flow of the page really clean.*/
+video {
+    display: block;
+    float: right;
+    width: 400px;
+    padding: 5px;
+    margin: 40px 50px 5px 20px;
 }
 
-/*M5LO5 Demonstrate the use of flexboxes on a web page (CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page)
-In this case I targeted the comments from customers.  I chose to use flexbox instead of a grid because I already had the image above formated and floated.*/
+h2#linktogammill {
+    display: inline-block;
+    float: right;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+/* Saved for use later
 div.comments {
     text-align: justify;
     width: 40%;
@@ -84,28 +100,30 @@ div#darlene {
     flex-grow: 1;
     flex-shrink: 1;
 }
-
-/* Pulldown Menu Styles */
-li.servicesmain {
-    position: relative;
-}
-
-ul.servicessub {
-    display: none;
-    list-style: none;
-    width: 20%;
-    padding: 3px;
-    background-color: #7bd5ff;
-    box-shadow: #777777 2px 2px 12px;
-    position: absolute;
-}
-
-a.servicesmain:hover + ul.servicessub,
-ul.servicessub:hover {
-    display: block;
-}
+*/
 
 /* About Page Styles */
+article.v4 > img{
+    float: left;
+    padding: 10px;
+}
+
+article.v4 > h1 {
+    text-align: left;
+    padding-top: 15px;
+}
+
+article.v4 > ul {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+}
+/*M8LO10 Demonstrate a CSS animation or transition (CSS, identify which is being done and its impact on the rendered HTML; note it has to include a time aspect, not be immediate)
+This effect on the html creates a blue background surrounding the image and gradually changes its color.*/
+article.v4 > img {
+    background: blue;
+    transition: background 10s ease;
+}
 
 article.v3 > img {
     float: right;
@@ -136,11 +154,13 @@ article.v2 > img {
 article.v2 > h1 {
     text-align: left;
     text-decoration: underline;
+    padding-top: 10px;
 }
 
 article.v2 > ul {
     list-style: none;
     text-align: left;
+    padding: 10px;
 }
 
 
@@ -182,11 +202,62 @@ div.fees > dt > dd {
 /*Contact Styles */
 
 div.contact {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 10px 20px 10px 20px;
+    align-self: center
+}
+
+div#grayson {
+    width: 30%;
+    padding: 20px 10px 20px 30px;
+}
+
+div#contact {
+    width: 30%;
+    padding: 20px 10px 20px 10px;
+    align-self: center;
+    font-weight: 600
+}
+/*M7LO11 Demonstrate how to format a form with CSS (group your form styles together in your CSS file, and document their overall impact on the form)
+The overall impact of my css on the form was placing it inside a flexbox and making it a flex box. I also really wanted to be able to tweak and play with the fonts and alignments.  */
+div#form {
+    width: 30%;
+    padding: 20px 10px 20px 10px;
+    align-self: center
+}
+
+form#flex {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+label#legend {
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: 900;
+    text-align: center;
+    padding: 2px;
+}
+
+label {
+    text-align: left;
+    font-weight: 500;
+}
+
+div#submit {
+    padding: 5px;
+}
+
+h3.dropshadow {
+    text-shadow: 2px 2px #cccccc;
+}
+
+/*div.contact {
     height: 325px;
-    border-style: dotted;
-    border-color: #777777;
-    border-width: 7px;
-    border-radius: 10px;
 }
 
 div#grayson {
@@ -205,7 +276,7 @@ div#contact {
     top: 75px;
     width: 300px;
     font-size: 25px;
-}
+} */
 
 /* Gallery Styles */
 
