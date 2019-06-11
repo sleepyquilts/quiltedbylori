@@ -1,0 +1,17 @@
+/*
+        Project V1: Quilted by Lori
+        Created by: Jennah Hubenak
+        Date: May 3, 2019
+        This file holds my reset styles for the website
+*/
+
+/*M3LO1 Demonstrate the use of CSS reset styles (CSS, note where you have CSS reset rules)
+Here I have created reset stlyes for my website.  I am not sure what I will need to add in the future so I created a new stylesheet for them. */
+
+body, div, dl, dt, dd, footer, h1, h2, header, html, img, li, nav, ol, p, ul{
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    font-family: sans-serif;
+}
